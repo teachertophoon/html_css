@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            /* 클래스 작성 (설계도 작성) */
+            class Car {
+                constructor(wheel, brand, model, color) {
+                    this.wheel = wheel;
+                    this.brand = brand;
+                    this.model = model;
+                    this.color = color;
+                }
+            }
+
+            /* 클래스 작성 (Date) */
+            class Date {
+                constructor() {
+                    this.year = 2021;
+                    this.month = 9;
+                    this.day = 7;
+                    this.hour = 14;
+                    this.minute = 28;
+                }
+            }
+
+            let date1 = new Date();
+            console.log(date1.year + "/" + date1.month + "/" + date1.day);
+
+            /* 클래스의 객체화 (실체화) */
+            let car1 = new Car(4, "현대", "G80", "빨간색");
+            console.log(car1.brand);
+            console.log(car1.wheel);
+            console.log(car1.model);
+            console.log(car1.color);
+
+            let car2 = new Car(4, "테슬라", "모델S", "파란색");
+            console.log(car2.brand);
+            console.log(car2.wheel);
+            console.log(car2.model);
+            console.log(car2.color);
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

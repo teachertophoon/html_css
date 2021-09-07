@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+        
+            function ex02() {
+                let kor = document.getElementById("kor").value;
+                let mat = document.getElementById("mat").value;
+                let eng = document.getElementById("eng").value;
+
+                console.log("국어 점수: " + kor);
+                console.log("수학 점수: " + mat);
+                console.log("영어 점수: " + eng);
+
+                let sum = Number(kor) + Number(mat) + Number(eng);
+                let avg = sum / 3;
+
+                document.getElementById("sum").innerHTML = sum;
+                document.getElementById("avg").innerHTML = avg;
+            }
+        </script>
+    </head>
+    <body>
+        <label>국어<input id="kor" onkeyup="ex02()"></label><br/>
+        <label>수학<input id="mat" onkeyup="ex02()"></label><br/>
+        <label>영어<input id="eng" onkeyup="ex02()"></label><br/>
+
+        <label>합계<span id="sum"></span></label><br/>
+        <label>평균<span id="avg"></span></label><br/>
+    </body>
+</html>

@@ -5,10 +5,68 @@
         <link href="./bootstrap4/css/bootstrap.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <nav>
-            <a href="./index.html">Home</a>
-            <a href="./blog_list.html">Blog</a>
-            <a href="./about_me.html">About Me</a>
+        <!-- 네비게이션바 영역 (992px보다 크면 메뉴 확장버튼 숨겨짐, 배경은 밝은색) -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- 브랜드 명을 입력하는 부분 -->
+            <a class="navbar-brand" href="#">Do It Django</a>
+
+            <!-- navbar-expand-lg 클래스를 nav 태그에서 사용한 경우는 992px보다 작을경우 아래 버튼 표시-->
+            <!-- 아래 버튼은 폰 화면 크기에서 메뉴를 보였다 숨겼다 하는 버튼-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarSupportedContent">
+
+                <!-- 확장 버튼 아이콘 모양을 결정 -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 위 button을 눌렸을 때 나타났다 사라지는 메뉴 부분-->
+            <!-- 메뉴 구성하는 부분 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- 네비게이션의 좌측부분 (mr-auto 적용하여 좌측정렬)-->
+                <ul class="navbar-nav mr-auto">
+                    <!-- 첫 번째 메뉴 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <!-- 두 번째 메뉴 -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./blog_list.html">Blog</a>
+                    </li>
+                    <!-- 세 번째 메뉴 -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about_me.html">About Me</a>
+                    </li>
+                    <!-- 네 번째 메뉴 (드롭다운 메뉴)-->
+                    <li class="nav-item dropdown">
+                        <!-- 드롭다운 메뉴를 펼쳤다 숨겼다 하는 버튼 -->
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown">
+                            Dropdown
+                        </a>
+                        <!-- 드롭다운 메뉴 구성 -->
+                        <div class="dropdown-menu">
+                            <!-- 첫 번째 메뉴 -->
+                            <a class="dropdown-item" href="#">Action</a>
+                            <!-- 두 번째 메뉴 -->
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <!-- 메뉴 구분선 -->
+                            <div class="dropdown-divider"></div>
+                            <!-- 세 번째 메뉴 -->
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 네비게이션의 우측부분 -->
+                <form class="form-inline my-2 my-lg-0">
+                    <!-- 검색어 입력부분 -->
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <!-- 검색어를 서버로 전송하는 버튼 (type 속성의 submit)-->
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+
         </nav>
 
         <h1>Blog</h1>

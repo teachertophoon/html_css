@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style type="text/css">
+            .result-style {
+                background-color: darkred;
+                color: gold;
+            }
+        </style>
         <script type="text/javascript">
         function ex01() {
             let input = document.getElementById("input1").value;
@@ -10,6 +16,6 @@
     </head>
     <body>
       <input id="input1" onkeyup="ex01()">
-      <span id="result"></span>
+      <span class="result-style" id="result"></span>
     </body>
 </html>

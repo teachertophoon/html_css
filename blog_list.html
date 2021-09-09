@@ -3,6 +3,12 @@
     <head>
         <title>Blog</title>
         <link href="./bootstrap4/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/f825ae5235.js" crossorigin="anonymous"></script>
+        <style type="text/css">
+            .google-icon {
+                color: red;
+            }
+        </style>
     </head>
     <body>
         <!-- 네비게이션바 영역 (992px보다 크면 메뉴 확장버튼 숨겨짐, 배경은 밝은색) -->
@@ -81,7 +87,15 @@
                     </div>
                     <!-- 모달 바디 (모달 내용을 삽입)-->
                     <div class="modal-body">
-                        모달 내용이 들어가는 부분
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-outline-dark btn-block"><i class="fab fa-google google-icon"></i> Log in with Google</button>
+                                <button type="button" class="btn btn-outline-dark btn-block"><i class="far fa-envelope"></i> Log in with E-mail</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-outline-dark btn-block"><i class="far fa-envelope"></i> Sign up with E-mail</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

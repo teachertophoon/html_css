@@ -61,12 +61,35 @@
                     <!-- 로그인 버튼 -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Log In</a>
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Log In</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!-- 모달 헤더 (모달의 제목과 닫기버튼 존재)-->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Log In</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span> <!-- escape 문자 -->
+                        </button>
+                    </div>
+                    <!-- 모달 바디 (모달 내용을 삽입)-->
+                    <div class="modal-body">
+                        모달 내용이 들어가는 부분
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container my-3">
             <div class="row">
